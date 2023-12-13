@@ -1,6 +1,8 @@
 FROM jupyter/base-notebook
 
-COPY m_tech.ipynd /home/jovyan/work/
+COPY M_tech.ipynb /work/
+
+WORKDIR /home/jovyan/app
 
 RUN pip install pandas scipy matplotlib
 
